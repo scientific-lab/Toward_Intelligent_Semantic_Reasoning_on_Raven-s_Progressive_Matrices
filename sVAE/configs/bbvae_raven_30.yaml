@@ -1,0 +1,34 @@
+model_params:
+  name: 'BetaVAE'
+  in_channels: 1
+  #latent_dim: 128
+  latent_dim: 30
+  loss_type: 'B'
+  #gamma: 10.0
+  gamma: 20.0
+  max_capacity: 25
+  Capacity_max_iter: 10000
+
+data_params:
+  data_path: "Data/"
+  train_batch_size: 64
+  val_batch_size:  64
+  #patch_size: 64
+  num_workers: 4
+#   num_workers: 0
+  
+exp_params:
+  LR: 0.001
+  weight_decay: 0.001
+  scheduler_gamma: 0.95
+  kld_weight: 0.00025
+  manual_seed: 1265
+
+trainer_params:
+  gpus: [2]
+  max_epochs: 100
+
+logging_params:
+  save_dir: "logs/30 dimensions/"
+  manual_seed: 1265
+  name: 'BetaVAE'
