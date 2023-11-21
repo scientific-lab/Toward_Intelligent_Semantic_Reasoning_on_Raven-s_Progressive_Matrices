@@ -49,6 +49,17 @@ into
 to produce possible answer images for the problems.
 
 
+## Pre-trained model and code
+
+Please note that due to GitHub's file size limitations, some checkpoint files are missing from this repository. You can download the complete model from [this link](https://pan.baidu.com/s/1y96JgXHkIO-Fh-6U5YrnzA?pwd=1t3c) using the password "1t3c".
+
+In order to run the model, you need to replace the empty "I-RAVEN", "RAVEN_fair", and "RAVEN_ori" folders with the downloaded "I-RAVEN", "RAVEN-FAIR", and "RAVEN" datasets, and then execute the following command:
+
+`python run_all.py`.
+
+If you require any customization of the sVAE and CMRB module, please do not hesitate to contact us for further assistance.
+
+
 
 
 
